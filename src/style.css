@@ -1,0 +1,130 @@
+:root {
+    --main-color: #16d6cd;
+}
+
+.btn {
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color) !important;
+}
+
+.btn:hover {
+    background-color: #fff;
+}
+
+h3 {
+    text-align: center;
+    font-size: 18px;
+    font-family: cursive;
+    margin-bottom: 40px;
+    padding: 30px;
+    background-color: var(--main-color);
+    position: sticky;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+
+.box-column {
+    border: 1px solid #cdcdcd;
+    position: relative;
+    /* padding-top: 110px; */
+    overflow-y: scroll;
+    height: 750px;
+}
+
+.card:hover {
+    background-color: rgb(255, 207, 144) !important;
+}
+
+.w-45 {
+    width: 45%;
+}
+
+form {
+    background-color: #fff;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #fff;
+}
+
+.tag-item {
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 10px 5px;
+    width: fit-content;
+}
+
+.btn_search {
+    background-color: #fff !important;
+    border: 1px solid #cdcdcd !important;
+    border-radius: 0 !important;
+}
+
+/*********************
+    * PreLoader
+*********************/
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 3px solid var(--main-color);
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+.loader::after {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid;
+    border-color: var(--main-color) transparent;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
