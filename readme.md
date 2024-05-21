@@ -16,6 +16,7 @@ Ensure you have the following installed on your machine:
 1. **Install Dependencies**
 
     ```sh
+    git clone https://github.com/achraflafkiri/property_manager_clientside
     npm install
     ```
 
